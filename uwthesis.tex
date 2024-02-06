@@ -1,0 +1,138 @@
+%  ========================================================================
+%  Copyright (c) 1985 The University of Washington
+%
+%  Licensed under the Apache License, Version 2.0 (the "License");
+%  you may not use this file except in compliance with the License.
+%  You may obtain a copy of the License at
+%
+%      http://www.apache.org/licenses/LICENSE-2.0
+%
+%  Unless required by applicable law or agreed to in writing, software
+%  distributed under the License is distributed on an "AS IS" BASIS,
+%  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+%  See the License for the specific language governing permissions and
+%  limitations under the License.
+%  ========================================================================
+%
+% Documentation for University of Washington thesis LaTeX document class
+% by Jim Fox
+% fox@washington.edu
+%
+%    Revised 2020/02/24, added \caption()[]{} option.  No ToC.
+%
+%    Revised for version 2015/03/03 of uwthesis.cls
+%    Revised, 2016/11/22, for cleanup of sample copyright and title pages
+%
+%    This document is contained in a single file ONLY because
+%    I wanted to be able to distribute it easily.  A real thesis ought
+%    to be contained on many files (e.g., one for each chapter, at least).
+%
+%    To help you identify the files and sections in this large file
+%    I use the string '==========' to identify new files.
+%
+%    To help you ignore the unusual things I do with this sample document
+%    I try to use the notation
+%       
+%    % --- sample stuff only -----
+%    special stuff for my document, but you don't need it in your thesis
+%    % --- end-of-sample-stuff ---
+%
+%    Printed in twoside style now that that's allowed
+%
+ 
+\documentclass [11pt, proquest] {uwthesis}[2020/02/24]
+ 
+%
+% The following line would print the thesis in a postscript font 
+
+% \usepackage{natbib}
+% \def\bibpreamble{\protect\addcontentsline{toc}{chapter}{Bibliography}}
+
+\setcounter{tocdepth}{1}  % Print the chapter and sections to the toc
+ 
+
+% ==========   Local defs and mods
+%
+
+% --- sample stuff only -----
+% These format the sample code in this document
+
+\usepackage{alltt}  % 
+\newenvironment{demo}
+  {\begin{alltt}\leftskip3em
+     \def\\{\ttfamily\char`\\}%
+     \def\{{\ttfamily\char`\{}%
+     \def\}{\ttfamily\char`\}}}
+  {\end{alltt}}
+ 
+% metafont font.  If logo not available, use the second form
+%
+% \font\mffont=logosl10 scaled\magstep1
+\let\mffont=\sf
+% --- end-of-sample-stuff ---
+ 
+\begin{document}
+ 
+% ==========   Preliminary pages
+%
+% ( revised 2012 for electronic submission )
+%
+
+\prelimpages
+ 
+%
+% ----- copyright and title pages
+%
+\Title{Enhancing Computer Vision: \\
+A Comprehensive Analysis and Optimization of Key Point Descriptors}
+\Author{Frank Sossi}
+\Year{2023}
+\Program{Computer Science \& Software Engineering}
+
+\Chair{Professor Clark Olson}{Committee Chair}{Computing \& Software Systems}
+\Signature{Professor Min Chen}
+\Signature{Professor Dong Si}
+
+\copyrightpage
+
+\titlepage  
+
+%
+% ----- abstract
+%
+
+\setcounter{page}{-1}
+\abstract{%
+In the area of computer vision, the pooling of keypoint descriptors plays an important role in achieving improved performance for various applications. However, a comprehensive understanding of the performance and efficiency of pooling of different descriptors has not been well explored. This study intends to bridge this knowledge gap by implementing, optimizing, and bench-marking a set of both experimental and established descriptors under different pooling configurations. The objective is to examine how the aggregation of individual keypoint attributes into pooled descriptors can lead to a more robust and effective descriptor representation, which would potentially enhance the accuracy and reliability of computer vision tasks. The research is structured around three main objectives: exploring the best pooling of descriptors as opposed to or in combination with stacking, implementing a range of descriptor pooling strategies, and augmenting the efficacy of pooled descriptors through careful optimization processes. Furthermore, the resulting descriptors will be bench-marked to evaluate the performance of these pooled descriptors, with a special focus on precision and recall metrics, which are important for examining the accuracy and completeness of the descriptor matching process. Through an analysis of descriptor pooling performance this study aims to provide substantial evidence contributing to the broader field of computer science, and enhancing practical methodologies within the realm of computer vision. The findings from this research are anticipated to facilitate a deeper understanding of descriptor pooling strategies but also contribute to advancements in computer vision applications, making a notable contribution to both academic and practical realms.
+}
+
+\tableofcontents
+\listoffigures
+%\listoftables  % I have no tables
+
+\textpages
+
+% ========== Begin Content Here ==========
+
+\chapter{Introduction}
+
+\section{Goals/Vision}
+\input{sections/goals_vision.tex}
+
+\section{Success Criteria}
+\input{sections/success_criteria.tex}
+
+\section{Methodology}
+\input{sections/methodology.tex}
+
+\chapter{Literature Review}
+
+% ========== End of Content ==========
+
+% ==========   Bibliography
+%
+\nocite{*}   % include everything in the uwthesis.bib file
+\bibliographystyle{plain}
+\bibliography{uwthesis}
+
+\end{document}

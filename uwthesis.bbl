@@ -1,0 +1,119 @@
+\begin{thebibliography}{10}
+
+\bibitem{balntas2017hpatches}
+Vassileios Balntas, Karel Lenc, Andrea Vedaldi, and Krystian Mikolajczyk.
+\newblock Hpatches: A benchmark and evaluation of handcrafted and learned local descriptors.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 5173--5182, 2017.
+
+\bibitem{balntas2016learning}
+Vassileios Balntas, Edgar Riba, Daniel Ponsa, and Krystian Mikolajczyk.
+\newblock Learning local feature descriptors with triplets and shallow convolutional neural networks.
+\newblock In {\em Bmvc}, volume~1, page~3, 2016.
+
+\bibitem{dong2015domain}
+Jingming Dong and Stefano Soatto.
+\newblock Domain-size pooling in local descriptors: Dsp-sift.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 5097--5106, 2015.
+
+\bibitem{TUG:h-l}
+Editor.
+\newblock Hyphenation exception log.
+\newblock {\em TUGboat}, 7(3):145, 1986.
+
+\bibitem{gallet2022computing}
+Benoit Gallet and Michael Gowanlock.
+\newblock Computing double precision euclidean distances using gpu tensor cores.
+\newblock {\em arXiv preprint arXiv:2209.11287}, 2022.
+
+\bibitem{companion}
+M{ichel} Goossens, F{rank} Mittelbach, and A{lexander} Samarin.
+\newblock {\em The {\LaTeX} Companion}.
+\newblock Addison-Wesley, 1994.
+
+\bibitem{book}
+Donald~E. Knuth.
+\newblock {\em The {\TeX} book}.
+\newblock Addison-Wesley, 1984.
+
+\bibitem{texbook}
+Donald~E. Knuth.
+\newblock {\em The {\TeX} Book}.
+\newblock Addison-Wesley Professional, 1986.
+
+\bibitem{Tbook}
+Donald~E. Knuth.
+\newblock {\em {\TeX}: The Program}.
+\newblock Addison-Wesley, 1986.
+
+\bibitem{CMT}
+Donald~E. Knuth.
+\newblock {\em Computer Modern Typefaces}.
+\newblock Addison-Wesley, 1986.
+
+\bibitem{Metafont}
+Donald~E. Knuth.
+\newblock {\em The Metafont book}.
+\newblock Addison-Wesley, 1986.
+
+\bibitem{Lbook}
+Leslie Lamport.
+\newblock {\em {\LaTeX}: A Document Preparation System}.
+\newblock Addison-Wesley, 2nd edition, 1994.
+
+\bibitem{lee2023multi}
+JongMin Lee, Eunhyeok Park, and Sungjoo Yoo.
+\newblock Multi-scale local implicit keypoint descriptor for keypoint matching.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 6144--6153, 2023.
+
+\bibitem{li2010chunking}
+Qi~Li, Vojislav Kecman, and Raied Salman.
+\newblock A chunking method for euclidean distance matrix calculation on large dataset using multi-gpu.
+\newblock In {\em 2010 Ninth International Conference on Machine Learning and Applications}, pages 208--213. Ieee, 2010.
+
+\bibitem{olson2016complementary}
+Clark~F Olson, Sam~A Hoover, Jordan~L Soltman, and Siqi Zhang.
+\newblock Complementary keypoint descriptors.
+\newblock In {\em Advances in Visual Computing: 12th International Symposium, ISVC 2016, Las Vegas, NV, USA, December 12-14, 2016, Proceedings, Part I 12}, pages 341--352. Springer, 2016.
+
+\bibitem{olson2016keypoint}
+Clark~F Olson and Siqi Zhang.
+\newblock Keypoint recognition with histograms of normalized colors.
+\newblock In {\em 2016 13th Conference on Computer and Robot Vision (CRV)}, pages 311--318. IEEE, 2016.
+
+\bibitem{oxford-dataset}
+James Philbin, Ondrej Chum, Michael Isard, Josef Sivic, and Andrew Zisserman.
+\newblock Object retrieval with large vocabularies and fast spatial matching.
+\newblock In {\em 2007 IEEE conference on computer vision and pattern recognition}, pages 1--8. IEEE, 2007.
+
+\bibitem{Hamlet}
+William Shakespeare.
+\newblock {\em Hamlet}.
+\newblock F.S.~Crofts~\&~Co., Inc., NY, 1946.
+\newblock Act~I, Scene~3, Lines~70-72, are apropos.
+
+\bibitem{shao2003zubud}
+Hao Shao, Tom{\'a}{\v{s}} Svoboda, and Luc Van~Gool.
+\newblock Zubud-zurich buildings database for image based recognition.
+\newblock {\em Computer Vision Lab, Swiss Federal Institute of Technology, Switzerland, Tech. Rep}, 260(20):6, 2003.
+
+\bibitem{PCTeX}
+{Spivak, M.D., Ph.D.}
+\newblock {\em PC{\TeX}\ Manual}.
+\newblock Personal {\TeX}, Inc., CA, 1985.
+
+\bibitem{JTeX}
+{Spivak, M.D., Ph.D.}
+\newblock {\em The Joy of {\TeX}}.
+\newblock American Mathematical Society, RI, 1986.
+
+\bibitem{you2022gpu}
+Le~You, Han Jiang, Jinyong Hu, C~Hwa Chang, Lingxi Chen, Xintong Cui, and Mengyang Zhao.
+\newblock Gpu-accelerated faster mean shift with euclidean distance metrics.
+\newblock In {\em 2022 IEEE 46th Annual Computers, Software, and Applications Conference (COMPSAC)}, pages 211--216. IEEE, 2022.
+
+\bibitem{zhao2023aliked}
+Xiaoming Zhao, Xingming Wu, Weihai Chen, Peter~CY Chen, Qingsong Xu, and Zhengguo Li.
+\newblock Aliked: A lighter keypoint and descriptor extraction network via deformable transformation.
+\newblock {\em IEEE Transactions on Instrumentation and Measurement}, 2023.
+
+\end{thebibliography}
