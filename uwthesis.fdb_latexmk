@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex uwthesis"] 1707193458 "uwthesis.aux" "uwthesis.bbl" "uwthesis" 1707193460 0
+["bibtex uwthesis"] 1707194155 "uwthesis.aux" "uwthesis.bbl" "uwthesis" 1707194309 0
   "./uwthesis.bib" 1707221710 5634 b3cae778880df7b64e3fb95a5a953c98 ""
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1704400182 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "uwthesis.aux" 1707193460 1690 e12dc782b893420b5e4827ee3be75afe "pdflatex"
+  "uwthesis.aux" 1707194309 1949 4429b9a5c3b965e9cfdc15ace18de72b "pdflatex"
   (generated)
   "uwthesis.bbl"
   "uwthesis.blg"
   (rewritten before read)
-["pdflatex"] 1707193460 "/home/frank/Documents/Thesis_UW_2023/uwthesis.tex" "uwthesis.pdf" "uwthesis" 1707193460 0
-  "/home/frank/Documents/Thesis_UW_2023/uwthesis.tex" 1707193421 5383 b4cbaf48efd5cf967b1c44213685fdc7 ""
+["pdflatex"] 1707194308 "/home/frank/Documents/Thesis_UW_2023/uwthesis.tex" "uwthesis.pdf" "uwthesis" 1707194309 0
+  "/home/frank/Documents/Thesis_UW_2023/uwthesis.tex" 1707194154 5424 02de220cf442287b4271910f01d1ad2c ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1704400182 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1704400182 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1704400182 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -26,13 +26,11 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1704400182 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1704400182 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1704400182 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
-  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti8.tfm" 1704400182 1504 1747189e0441d1c18f3ea56fafc1c480 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1704400182 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb" 1704400182 33268 c6f8eb7f8646b55ddad94764eab1ec72 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1704400182 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1704400182 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1704400182 36118 fad905eba93cff5bce1e185fe980a177 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1704400182 35660 fb24af7afbadb71801619f1415838111 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1704400182 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/share/texmf-dist/tex/latex/base/alltt.sty" 1704400182 3137 837d2e4f1defd7c190a44408f494ec95 ""
   "/usr/share/texmf-dist/tex/latex/base/bk12.clo" 1704400182 8285 1b093a7880310fd335493621f5803fd7 ""
@@ -42,14 +40,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1705282236 4480386 e7b81ccf6d0f2d101841f173a6b5bae6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1705282205 6768058 e18c0902f8cdfa0f35d34bf5101bb574 ""
   "sections/goals_vision.tex" 1707193460 2849 b05bb52cdf148f40f112c976509b8427 ""
+  "sections/literature_review.tex" 1707194036 2397 cf6158ebe8105fafc28934910747a4b4 ""
   "sections/methodology.tex" 1707221710 905 058f5a8a6a3f65aa5df81695ff08b531 ""
   "sections/success_criteria.tex" 1707221710 1097 3dedfb37bbca7de465eb2772d5e8777a ""
-  "uwthesis.aux" 1707193460 1690 e12dc782b893420b5e4827ee3be75afe "pdflatex"
-  "uwthesis.bbl" 1707193458 4691 c1e248766a4588fdf7e7d3f1ff5c1539 "bibtex uwthesis"
-  "uwthesis.cls" 1707221710 25674 c544b0dba620dd56c1c3462682374fa4 ""
-  "uwthesis.lof" 1707193460 38 0237b1c37fb6a1ca2e15595828fa8f60 "pdflatex"
-  "uwthesis.tex" 1707193421 5383 b4cbaf48efd5cf967b1c44213685fdc7 ""
-  "uwthesis.toc" 1707193460 520 cba20ab57a086d7548a80eedc8f2b534 "pdflatex"
+  "uwthesis.aux" 1707194309 1949 4429b9a5c3b965e9cfdc15ace18de72b "pdflatex"
+  "uwthesis.bbl" 1707194155 1091 92111f9671761c1cc9e68b5911cd2db4 "bibtex uwthesis"
+  "uwthesis.cls" 1707194308 25674 e00900205c21534d6b5bd7eaf2f1cb0e ""
+  "uwthesis.lof" 1707194309 38 0237b1c37fb6a1ca2e15595828fa8f60 "pdflatex"
+  "uwthesis.tex" 1707194154 5424 02de220cf442287b4271910f01d1ad2c ""
+  "uwthesis.toc" 1707194309 981 ff000f1a6959f81b14861bba169b49fc "pdflatex"
   (generated)
   "uwthesis.aux"
   "uwthesis.lof"

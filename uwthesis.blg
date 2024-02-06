@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: uwthesis.aux
 The style file: plain.bst
 Database file #1: uwthesis.bib
-Warning--can't use both volume and number fields in balntas2016learning
-You've used 23 entries,
+You've used 4 entries,
             2118 wiz_defined-function locations,
-            618 strings with 7280 characters,
-and the built_in function-call counts, 7969 in all, are:
-= -- 773
-> -- 349
-< -- 10
-+ -- 145
-- -- 116
-* -- 470
-:= -- 1273
-add.period$ -- 75
-call.type$ -- 23
-change.case$ -- 118
+            521 strings with 4853 characters,
+and the built_in function-call counts, 1858 in all, are:
+= -- 189
+> -- 77
+< -- 3
++ -- 30
+- -- 26
+* -- 113
+:= -- 276
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 365
-empty$ -- 660
-format.name$ -- 116
-if$ -- 1742
+cite$ -- 4
+duplicate$ -- 83
+empty$ -- 147
+format.name$ -- 26
+if$ -- 417
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 33
-newline$ -- 119
-num.names$ -- 46
-pop$ -- 184
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 8
+pop$ -- 34
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 21
 quote$ -- 0
-skip$ -- 254
+skip$ -- 73
 stack$ -- 0
-substring$ -- 399
-swap$ -- 111
-text.length$ -- 10
+substring$ -- 132
+swap$ -- 38
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
-warning$ -- 1
-while$ -- 73
-width$ -- 25
-write$ -- 255
-(There was 1 warning)
+type$ -- 16
+warning$ -- 0
+while$ -- 17
+width$ -- 5
+write$ -- 46
