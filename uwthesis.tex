@@ -58,12 +58,19 @@
 % These format the sample code in this document
 
 \usepackage{alltt}  % 
+  % Added Packages by FSossi
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+
 \newenvironment{demo}
   {\begin{alltt}\leftskip3em
      \def\\{\ttfamily\char`\\}%
      \def\{{\ttfamily\char`\{}%
      \def\}{\ttfamily\char`\}}}
   {\end{alltt}}
+
+
  
 % metafont font.  If logo not available, use the second form
 %

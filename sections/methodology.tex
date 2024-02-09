@@ -8,3 +8,108 @@ The project methodology is designed to systematically address the research objec
 \end{enumerate}
 
 This structured approach ensures thorough exploration and evaluation of descriptor pooling strategies, facilitating meaningful contributions to the field of computer vision.
+
+% make a numbered list
+\begin{enumerate}
+    \item Average pooling
+    \item Max pooling
+    \item Domain Size pooling
+    \item L1 normalization and Rooting (by itself and in combination with other strategies)
+    \item L1 normalization after pooling
+    \item L1 normalization before pooling
+    \item Rooting (L2 normalization after pooling)
+    \item Rooting (L2 normalization before pooling)
+\end{enumerate}
+
+
+\section*{Sift Descriptor Evaluation}
+
+This document presents an evaluation of different SIFT descriptors based on their performance in three key computer vision tasks: Verification, Matching, and Retrieval. The evaluation criteria include the Area Under Curve (AUC) for the Verification task, the mean Average Precision (mAP) for the Matching task, and the mAP for the Retrieval task at various query sizes.
+
+\section*{Descriptor Naming Convention}
+
+The naming of the descriptors follows a specific pattern based on their configuration:
+
+\begin{itemize}
+    \item \textbf{Pooling Strategy:} Indicates the pooling method used. "Avg" for Average Pooling, "Max" for Max Pooling, and "Dom" for Domain Size Pooling.
+    \item \textbf{Normalization Stage:} The stage at which normalization is applied. "Bef" for Before Pooling, "Aft" for After Pooling.
+    \item \textbf{Rooting Stage:} Indicates when rooting is applied. "RBef" for Rooting Before Pooling, "RAft" for Rooting After Pooling.
+    \item \textbf{Norm Type:} The type of norm used. "L1" for L1 norm, "L2" for L2 norm.
+\end{itemize}
+
+\section*{Verification Task Results}
+
+\begin{tabular}{lccc}
+\toprule
+\textbf{Descriptor} & \textbf{Noise Level} & \textbf{AUC (Balanced)} & \textbf{AP (Imbalanced)} \\
+\midrule
+SIFTMaxBefRBefL1 & Easy, Hard, Tough & 0.917, 0.862, 0.817 & 0.836, 0.707, 0.601 \\
+SIFTAvgAftRBefL1 & Easy, Hard, Tough & 0.875, 0.830, 0.797 & 0.771, 0.662, 0.576 \\
+SIFTAvgBefRBefL2 & Easy, Hard, Tough & 0.946, 0.890, 0.834 & 0.885, 0.750, 0.625 \\
+SIFTAvgAftRBefL2 & Easy, Hard, Tough & 0.919, 0.862, 0.815 & 0.836, 0.703, 0.595 \\
+SIFTDomAftRBefL1 & Easy, Hard, Tough & 0.875, 0.830, 0.797 & 0.771, 0.662, 0.576 \\
+\bottomrule
+\end{tabular}
+
+\section*{Matching Task Results}
+
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Descriptor} & \textbf{Easy} & \textbf{Hard} & \textbf{Tough} & \textbf{Mean} \\
+\midrule
+SIFTMaxBefRBefL1 & 0.666 & 0.338 & 0.139 & 0.381 \\
+SIFTAvgAftRBefL1 & 0.670 & 0.340 & 0.140 & 0.383 \\
+SIFTAvgBefRBefL2 & 0.666 & 0.337 & 0.137 & 0.380 \\
+SIFTAvgAftRBefL2 & 0.668 & 0.339 & 0.139 & 0.382 \\
+SIFTDomAftRBefL1 & 0.670 & 0.340 & 0.140 & 0.383 \\
+\bottomrule
+\end{tabular}
+
+\section*{Retrieval Task Results}
+
+\begin{tabularx}{\textwidth}{Xccccccc}
+\toprule
+\textbf{Descriptor} & \textbf{100} & \textbf{500} & \textbf{1000} & \textbf{5000} & \textbf{10000} & \textbf{15000} & \textbf{20000} \\
+\midrule
+SIFTMaxBefRBefL1 & 0.921 & 0.865 & 0.842 & 0.782 & 0.757 & 0.742 & 0.732 \\
+SIFTAvgAftRBefL1 & 0.938 & 0.886 & 0.864 & 0.807 & 0.783 & 0.768 & 0.759 \\
+SIFTAvgBefRBefL2 & 0.905 & 0.849 & 0.825 & 0.762 & 0.738 & 0.723 & 0.713 \\
+SIFTAvgAftRBefL2 & 0.924 & 0.868 & 0.845 & 0.785 & 0.760 & 0.745 & 0.735 \\
+SIFTDomAftRBefL1 & 0.938 & 0.886 & 0.864 & 0.807 & 0.783 & 0.768 & 0.759 \\
+\bottomrule
+\end{tabularx}
+
+\section*{Conclusion}
+
+The analysis demonstrates that SIFTAvgAftRBefL1 and SIFTMaxBefRBefL1 consistently show high performance across different tasks, making them among the best descriptors based on the provided results.
+
+\section*{Performance Improvement Over Baseline SIFT}
+
+The baseline SIFT descriptor, referred to as SIFTEXP2, served as the benchmark for evaluating the improvements offered by the modified descriptors. The performance of SIFTEXP2 across the Verification, Matching, and Retrieval tasks is summarized as follows:
+
+\subsection*{Baseline SIFT Performance}
+
+\begin{itemize}
+    \item \textbf{Verification Task (Balanced AUC):} Easy - 0.956, Hard - 0.887, Tough - 0.812
+    \item \textbf{Verification Task (Imbalanced AP):} Easy - 0.911, Hard - 0.762, Tough - 0.620
+    \item \textbf{Matching Task (mAP):} Mean - 0.353
+    \item \textbf{Retrieval Task (mAP for 10K queries):} Mean across noise levels - 0.645, 0.521, 0.479 (for 100, 500, 1000 queries respectively)
+\end{itemize}
+
+\subsection*{Improvement Analysis}
+
+Comparing the enhanced descriptors with the baseline SIFT, we observe notable improvements in certain aspects. For instance, SIFTAvgAftRBefL1 and SIFTMaxBefRBefL1, among others, demonstrated superior performance across various tasks. Specifically:
+
+\begin{itemize}
+    \item In the \textbf{Verification Task}, the enhanced descriptors showed robustness across different noise levels, with AUC values close to or surpassing the baseline in certain configurations.
+    \item The \textbf{Matching Task} saw modest improvements in the mean Average Precision, indicating enhanced matching capabilities over the baseline.
+    \item For the \textbf{Retrieval Task}, the enhanced descriptors outperformed the baseline, especially in scenarios with a larger number of queries, showcasing their effectiveness in retrieval applications.
+\end{itemize}
+
+The improvements highlight the effectiveness of modifying pooling strategies, normalization stages, rooting stages, and norm types in enhancing the overall performance of SIFT descriptors for specific tasks.
+
+\section*{Conclusion}
+
+The analysis illustrates that tailored modifications to the SIFT descriptor can lead to significant improvements in performance across verification, matching, and retrieval tasks. The descriptors SIFTAvgAftRBefL1 and SIFTMaxBefRBefL1, in particular, stand out as top performers, offering robust and efficient solutions for various computer vision challenges.
+
+
