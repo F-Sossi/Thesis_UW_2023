@@ -31,9 +31,9 @@ This document presents an evaluation of different SIFT descriptors based on thei
 The naming of the descriptors follows a specific pattern based on their configuration:
 
 \begin{itemize}
-    \item \textbf{Pooling Strategy:} Indicates the pooling method used. "Avg" for Average Pooling, "Max" for Max Pooling, and "Dom" for Domain Size Pooling.
-    \item \textbf{Normalization Stage:} The stage at which normalization is applied. "Bef" for Before Pooling, "Aft" for After Pooling.
-    \item \textbf{Rooting Stage:} Indicates when rooting is applied. "RBef" for Rooting Before Pooling, "RAft" for Rooting After Pooling.
+    \item \textbf{Pooling Strategy:} Indicates the pooling method used. "Avg" for Average Pooling, "Max" for Max Pooling, and "Dom" for Domain Size Pooling (summed as per \cite{dong2015domain}).
+    \item \textbf{Normalization Stage:} The stage at which normalization is applied. "Bef" for Before Pooling, "Aft" for After Pooling. For example "Bef" means the each descriptor is normalized then pooled.
+    \item \textbf{Rooting Stage:} Indicates when rooting is applied. "RBef" for Rooting Before Pooling, "RAft" for Rooting After Pooling. For example "RBef" means the square root of each descriptor is done then the results are pooled.
     \item \textbf{Norm Type:} The type of norm used. "L1" for L1 norm, "L2" for L2 norm.
 \end{itemize}
 
