@@ -37,6 +37,55 @@ The naming of the descriptors follows a specific pattern based on their configur
     \item \textbf{Norm Type:} The type of norm used. "L1" for L1 norm, "L2" for L2 norm.
 \end{itemize}
 
+\section*{SIFT Descriptor Processing}
+
+Given a set of keypoints extracted from an image, the process of generating and processing SIFT descriptors involves several steps, parameterized by the options chosen for pooling, normalization, rooting, and the norm type. Let $\mathbf{D}$ denote the matrix of descriptors extracted for all keypoints.
+
+\subsection*{Pooling Strategies}
+
+\begin{itemize}
+    \item \textbf{Domain Size Pooling (Dom)}: The descriptors are scaled and summed across different scales. For scale $s \in S$, where $S$ is the set of scales,
+    \begin{equation}
+        \mathbf{D}_{\text{Dom}} = \sum_{s \in S} \mathbf{D}_s.
+    \end{equation}
+    
+    \item \textbf{Average Pooling (Avg)}: The descriptors are averaged across scales,
+    \begin{equation}
+        \mathbf{D}_{\text{Avg}} = \frac{1}{|S|}\sum_{s \in S} \mathbf{D}_s.
+    \end{equation}
+    
+    \item \textbf{Max Pooling (Max)}: The maximum value is taken from descriptors across scales,
+    \begin{equation}
+        \mathbf{D}_{\text{Max}} = \max_{s \in S} \mathbf{D}_s.
+    \end{equation}
+\end{itemize}
+
+\subsection*{Normalization and Rooting}
+
+\begin{itemize}
+    \item \textbf{Normalization}: Applied before ($\text{Bef}$) or after ($\text{Aft}$) pooling, 
+    \begin{equation}
+        \mathbf{D}_{\text{norm}} = \frac{\mathbf{D} - \min(\mathbf{D})}{\max(\mathbf{D}) - \min(\mathbf{D})}, 
+    \end{equation}
+    where $\mathbf{D}$ is the descriptor matrix post-pooling, and the norm type dictates the space in which normalization occurs.
+    
+    \item \textbf{Rooting}: Applied before ($\text{RBef}$) or after ($\text{RAft}$) pooling, 
+    \begin{equation}
+        \mathbf{D}_{\text{root}} = \sqrt{\mathbf{D}},
+    \end{equation}
+    where $\mathbf{D}$ is the descriptor matrix subject to the selected pooling strategy.
+\end{itemize}
+
+\subsection*{Norm Types}
+
+\begin{itemize}
+    \item \textbf{L1 Norm (L1)}: Normalizes using the L1 norm.
+    \item \textbf{L2 Norm (L2)}: Normalizes using the L2 norm.
+\end{itemize}
+
+Each of these steps modifies the set of descriptors $\mathbf{D}$ based on the selected options, affecting the final descriptor matrix used for image matching and recognition tasks.
+
+
 \section*{Verification Task Results}
 
 \begin{tabular}{lccc}
